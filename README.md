@@ -1,2 +1,8 @@
 # docker-php
-A docker image that comes with the MySQL extension out of the box
+
+A docker image based on php:apache with with some of the more commonly used extensions pre-installed.
+
+Extensions:
+  - mysql
+  - mysqli
+  - mcrypt
