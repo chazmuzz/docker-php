@@ -13,3 +13,5 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install gd
 
 RUN echo "sendmail_path = /usr/sbin/sendmail -i -t" > /usr/local/etc/php/conf.d/sendmail.ini
+
+VOLUME /usr/local/etc/php
