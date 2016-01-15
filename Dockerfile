@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
         libxslt-dev \
         ssl-cert \
 	&& make-ssl-cert generate-default-snakeoil \
-    && docker-php-ext-install mbstring iconv mcrypt intl xsl pdo pdo_mysql \
+    && docker-php-ext-install mbstring iconv mcrypt intl xsl mysqli pdo pdo_mysql \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
