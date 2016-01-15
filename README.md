@@ -1,8 +1,18 @@
-# docker-php
+# chazmuzz/php
 
-A docker image based on php:apache with with some of the more commonly used extensions pre-installed.
+A docker image based on php:apache with some bells and whistles pre-installed in the form of php extensions and apache modules.
 
 Extensions:
-  - mysql
-  - mysqli
-  - mcrypt
+ 	- mysqli
+ 	- pdo
+	- pdo_mysql
+	- mcrypt
+	- mbstring
+	- iconv
+	- xls
+	- intl
+	- gd
+
+Apache modules switched on:
+	- mod_ssl
+	- mod_rewrite
