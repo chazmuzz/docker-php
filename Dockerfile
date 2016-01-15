@@ -1,4 +1,4 @@
-FROM php:7-apache
+FROM php:5.6-apache
 
 MAINTAINER Charlie Murray <charlie@bmore.co.uk>
 
