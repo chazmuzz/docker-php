@@ -20,3 +20,5 @@ RUN apt-get update && apt-get install -y \
 RUN a2enmod rewrite \
 	&& a2enmod ssl \
 	&& a2ensite default-ssl
+
+EXPOSE 443
